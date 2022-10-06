@@ -1,6 +1,6 @@
 This is a simple demonstration application used in the [Jenkins: The Definitive Guide](http://wakaleo.com/books/jenkins-the-definitive-guide) book.
 
-## Test Commit to check Github Webhook
+
 
 ## Building the project
 
