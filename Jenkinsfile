@@ -44,7 +44,11 @@ pipeline
 						git checkout -f master
 						source /root/.bash_profile
             					mvn clean package 
+						pwd
+						ls -lrth
 						chmod 755 *
+						ls -lrth
+						pwd
 						docker build -t mycentos:1.0 .
 						docker run -itdp 8088:8080 --name mytomcat-8081 mycentos:1.0
 						chmod 777 gameoflife-web/target/gameoflife.war
