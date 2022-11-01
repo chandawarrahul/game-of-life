@@ -49,6 +49,8 @@ pipeline
 						chmod 755 *
 						ls -lrth
 						pwd
+						ls -lrth Dockerfile
+						cat Dockerfile
 						docker build -t mycentos:1.0 .
 						docker run -itdp 8088:8080 --name mytomcat-8081 mycentos:1.0
 						chmod 777 gameoflife-web/target/gameoflife.war
