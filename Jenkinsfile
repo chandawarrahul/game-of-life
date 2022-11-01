@@ -47,7 +47,7 @@ pipeline
 						chmod 755 *
 						docker build -t mycentos:1.0 .
 						docker run -itdp 8088:8080 --name mytomcat-8081 mycentos:1.0
-						chmod 755 gameoflife-web/target/gameoflife.war
+						chmod 777 gameoflife-web/target/gameoflife.war
 						docker cp gameoflife-web/target/gameoflife.war mytomcat-8081:/usr/local/tomcat/webapps
 						
 						
