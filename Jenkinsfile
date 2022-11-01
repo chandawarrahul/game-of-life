@@ -41,7 +41,7 @@ pipeline
 					sh '''
 						docker system prune -a -f
 						git checkout -f master
-            mvn clean compile  
+            mvn clean package 
 						chmod 755 *
 						docker build -t mycentos:1.0 .
 						docker run -itdp 80:80 --name mytomcat-8081 mycentos:1.0
