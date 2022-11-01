@@ -5,7 +5,7 @@ pipeline
 		label 
 		{
 			label 'Master'
-			customWorkspace '/opt/project2'
+			customWorkspace '/opt/project3'
 			
 		}
 	}
@@ -43,6 +43,8 @@ pipeline
 						docker system prune -a -f
 						git checkout -f master
 						source /root/.bash_profile
+						pwd
+						ls -lrth
             					mvn clean package 
 						pwd
 						ls -lrth
