@@ -5,7 +5,7 @@ pipeline
 		label 
 		{
 			label 'Master'
-			customWorkspace '/opt/project2'
+			
 		}
 	}
 	stages
